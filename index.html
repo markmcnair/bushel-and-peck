@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bushel and a Peck | Micro Bakery</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+    
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="font-nunito antialiased selection:bg-secondary selection:text-white">
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex flex-col items-center justify-center bg-bg bg-noise overflow-hidden px-4 py-20">
+        
+        <!-- Floating "flour dust" particles -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-primary/30 animate-float-1"></div>
+            <div class="absolute top-1/3 right-1/4 w-1.5 h-1.5 rounded-full bg-secondary/40 animate-float-2"></div>
+            <div class="absolute bottom-1/3 left-1/3 w-2.5 h-2.5 rounded-full bg-primary/20 animate-float-3"></div>
+            <div class="absolute top-1/2 right-1/3 w-1 h-1 rounded-full bg-secondary/30 animate-float-1"></div>
+        </div>
+
+        <div class="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto">
+            <h1 class="font-sacramento text-7xl md:text-9xl text-dark mb-6 tracking-wide">Bushel and a Peck</h1>
+            
+            <!-- Floral Divider SVG -->
+            <div class="w-64 h-8 mb-8 text-pattern flex justify-center items-center">
+                <svg viewBox="0 0 200 20" fill="none" stroke="currentColor" stroke-width="1.5" class="w-full">
+                    <path d="M0,10 Q50,0 100,10 T200,10" />
+                    <!-- Tiny leaves -->
+                    <path d="M40,7 Q45,3 50,7 Q45,11 40,7" fill="currentColor" />
+                    <path d="M160,13 Q155,17 150,13 Q155,9 160,13" fill="currentColor" />
+                    <!-- Tiny flowers -->
+                    <circle cx="100" cy="10" r="3" fill="#D4A5A5" stroke="none" />
+                </svg>
+            </div>
+
+            <p class="font-quicksand text-lg md:text-xl text-primary font-medium mb-10 max-w-lg">
+                Made from scratch with love <br class="hidden sm:block">
+                <span class="text-base font-normal italic opacity-90">(and a little flour on our noses).</span>
+            </p>
+
+            <a href="#about" class="group relative inline-flex items-center justify-center px-8 py-3.5 text-base font-quicksand font-bold text-white bg-secondary rounded-full shadow-sm hover:shadow-md hover:bg-[#c49292] hover:-translate-y-0.5 transition-all duration-200 ease-out">
+                See What's Baking
+            </a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="relative bg-light py-24 px-6 md:px-12 lg:px-24">
+        
+        <!-- Trailing Floral SVG Left Margin -->
+        <div class="absolute left-4 top-20 bottom-20 w-12 hidden lg:block text-pattern opacity-40 pointer-events-none">
+            <svg viewBox="0 0 50 400" fill="none" stroke="currentColor" stroke-width="1" class="h-full">
+                <path d="M25,0 Q0,50 25,100 T25,200 T25,300 T25,400" />
+                <path d="M25,50 Q40,40 35,60" fill="currentColor" />
+                <path d="M25,150 Q10,140 15,160" fill="currentColor" />
+                <path d="M25,250 Q40,240 35,260" fill="currentColor" />
+                <path d="M25,350 Q10,340 15,360" fill="currentColor" />
+            </svg>
+        </div>
+
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16 lg:gap-24 relative z-10">
+            
+            <!-- Text Content -->
+            <div class="flex-1 space-y-6">
+                <h2 class="font-playfair text-4xl md:text-5xl text-dark font-medium mb-8">Our Little Kitchen</h2>
+                
+                <p class="text-lg leading-relaxed text-dark/80">
+                    Welcome to our micro bakery, born from a deep love of simple, homemade treats. We believe that the best things in life are baked slowly, measured by heart, and shared with the people you care about most.
+                </p>
+                <p class="text-lg leading-relaxed text-dark/80">
+                    Everything here is crafted in small batches—never more than a few dozen at a time. We use real butter, real vanilla, and real love to create flavors that remind you of home. Whether you need a single sweet moment or custom orders for celebrations of all sizes, our oven is always warm.
+                </p>
+                
+                <div class="pt-8">
+                    <p class="font-sacramento text-4xl text-secondary">
+                        "A pinch of love in every bite."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Image Placeholder -->
+            <div class="flex-1 w-full max-w-md">
+                <div class="relative w-full aspect-[4/5] bg-gradient-to-br from-white to-secondary/30 rounded-t-full scalloped-edge shadow-xl p-4 flex items-center justify-center border border-white/50">
+                    <!-- Inner frame decoration -->
+                    <div class="absolute inset-4 border border-dashed border-primary/30 rounded-t-full"></div>
+                    
+                    <div class="text-center space-y-4 text-primary/60">
+                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        <p class="font-quicksand text-sm tracking-widest uppercase">Brand Photography</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
