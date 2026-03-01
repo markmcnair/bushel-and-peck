@@ -8,14 +8,14 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@400;500;600&family=Sacramento&display=swap" rel="stylesheet">
     
     <link href="./output.css" rel="stylesheet">
 </head>
 <body class="font-nunito antialiased selection:bg-secondary selection:text-white">
 
     <!-- HERO SECTION -->
-    <section class="relative min-h-screen flex flex-col items-center justify-center bg-bg bg-noise overflow-hidden px-4 py-20">
+    <section class="relative min-h-screen flex flex-col items-center justify-center bg-bg bg-noise overflow-hidden px-4 py-20 fade-in-up">
         
         <!-- Floating "flour dust" particles -->
         <div class="absolute inset-0 pointer-events-none">
@@ -26,7 +26,7 @@
         </div>
 
         <div class="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto">
-            <h1 class="font-sacramento text-7xl md:text-9xl text-dark mb-6 tracking-wide">Bushel and a Peck</h1>
+            <h1 class="font-sacramento text-7xl md:text-9xl text-dark mb-6 tracking-wide drop-shadow-sm">Bushel and a Peck</h1>
             
             <!-- Floral Divider SVG -->
             <div class="w-64 h-8 mb-8 text-pattern flex justify-center items-center">
@@ -40,19 +40,28 @@
                 </svg>
             </div>
 
-            <p class="font-quicksand text-lg md:text-xl text-primary font-medium mb-10 max-w-lg">
+            <p class="font-quicksand text-lg md:text-xl text-primary font-medium mb-10 max-w-lg leading-relaxed">
                 Made from scratch with love <br class="hidden sm:block">
                 <span class="text-base font-normal italic opacity-90">(and a little flour on our noses).</span>
             </p>
 
-            <a href="#about" class="group relative inline-flex items-center justify-center px-8 py-3.5 text-base font-quicksand font-bold text-white bg-secondary rounded-full shadow-sm hover:shadow-md hover:bg-[#c49292] hover:-translate-y-0.5 transition-all duration-200 ease-out">
+            <a href="#menu" class="group relative inline-flex items-center justify-center px-8 py-3.5 text-base font-quicksand font-bold text-white bg-secondary rounded-full shadow-sm hover:shadow-md hover:bg-[#c49292] hover:-translate-y-0.5 transition-all duration-300 ease-out">
                 See What's Baking
             </a>
         </div>
     </section>
 
+    <!-- SECTION DIVIDER -->
+    <div class="w-full h-12 bg-light flex justify-center items-center text-pattern opacity-60">
+         <svg viewBox="0 0 400 20" fill="none" stroke="currentColor" stroke-width="1" class="w-48 h-full">
+            <path d="M0,10 Q100,0 200,10 T400,10" />
+            <path d="M100,7 Q110,2 120,7 Q110,12 100,7" fill="currentColor" />
+            <path d="M300,13 Q290,18 280,13 Q290,8 300,13" fill="currentColor" />
+        </svg>
+    </div>
+
     <!-- ABOUT SECTION -->
-    <section id="about" class="relative bg-light py-24 px-6 md:px-12 lg:px-24">
+    <section id="about" class="relative bg-light py-24 px-6 md:px-12 lg:px-24 fade-in-up">
         
         <!-- Trailing Floral SVG Left Margin -->
         <div class="absolute left-4 top-20 bottom-20 w-12 hidden lg:block text-pattern opacity-40 pointer-events-none">
@@ -69,17 +78,17 @@
             
             <!-- Text Content -->
             <div class="flex-1 space-y-6">
-                <h2 class="font-playfair text-4xl md:text-5xl text-dark font-medium mb-8">Our Little Kitchen</h2>
+                <h2 class="font-playfair text-4xl md:text-5xl text-dark font-semibold mb-8">Our Little Kitchen</h2>
                 
-                <p class="text-lg leading-relaxed text-dark/80">
+                <p class="text-lg leading-relaxed text-dark/80 font-medium">
                     Welcome to our micro bakery, born from a deep love of simple, homemade treats. We believe that the best things in life are baked slowly, measured by heart, and shared with the people you care about most.
                 </p>
-                <p class="text-lg leading-relaxed text-dark/80">
+                <p class="text-lg leading-relaxed text-dark/80 font-medium">
                     Everything here is crafted in small batches—never more than a few dozen at a time. We use real butter, real vanilla, and real love to create flavors that remind you of home. Whether you need a single sweet moment or custom orders for celebrations of all sizes, our oven is always warm.
                 </p>
                 
                 <div class="pt-8">
-                    <p class="font-sacramento text-4xl text-secondary">
+                    <p class="font-sacramento text-5xl text-secondary drop-shadow-sm">
                         "A pinch of love in every bite."
                     </p>
                 </div>
@@ -87,15 +96,15 @@
 
             <!-- Image Placeholder -->
             <div class="flex-1 w-full max-w-md">
-                <div class="relative w-full aspect-[4/5] bg-gradient-to-br from-white to-secondary/30 rounded-t-full scalloped-edge shadow-xl p-4 flex items-center justify-center border border-white/50">
+                <div class="relative w-full aspect-[4/5] bg-gradient-to-br from-[#FBF8F4] to-[#E8D5D5] rounded-t-full scalloped-edge shadow-lg p-4 flex items-center justify-center border border-white/60 transition-transform duration-500 hover:-translate-y-2">
                     <!-- Inner frame decoration -->
-                    <div class="absolute inset-4 border border-dashed border-primary/30 rounded-t-full"></div>
+                    <div class="absolute inset-4 border-[1.5px] border-dashed border-primary/40 rounded-t-full"></div>
                     
-                    <div class="text-center space-y-4 text-primary/60">
-                        <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="text-center space-y-4 text-primary/70">
+                        <svg class="w-16 h-16 mx-auto opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
-                        <p class="font-quicksand text-sm tracking-widest uppercase">Brand Photography</p>
+                        <p class="font-quicksand text-sm tracking-[0.2em] font-semibold uppercase">Brand Photography</p>
                     </div>
                 </div>
             </div>
@@ -103,5 +112,229 @@
         </div>
     </section>
 
+    <!-- SECTION DIVIDER -->
+    <div class="w-full h-12 bg-bg flex justify-center items-center text-pattern opacity-60">
+         <svg viewBox="0 0 400 20" fill="none" stroke="currentColor" stroke-width="1" class="w-48 h-full">
+            <path d="M0,10 Q100,20 200,10 T400,10" />
+            <circle cx="200" cy="10" r="2" fill="currentColor" />
+        </svg>
+    </div>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="relative py-24 px-6 md:px-12 bg-floral-pattern fade-in-up">
+        <div class="max-w-6xl mx-auto flex flex-col items-center">
+            
+            <!-- Whisk + Rolling Pin SVG -->
+            <div class="mb-6 text-primary opacity-80">
+                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" class="w-16 h-16" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Rolling pin -->
+                    <line x1="12" y1="52" x2="52" y2="12" />
+                    <line x1="8" y1="56" x2="16" y2="48" stroke-width="3" />
+                    <line x1="48" y1="16" x2="56" y2="8" stroke-width="3" />
+                    <!-- Whisk -->
+                    <path d="M24,24 Q32,16 40,24 T24,40" />
+                    <path d="M26,26 Q34,18 38,26 T26,38" />
+                    <line x1="16" y1="48" x2="26" y2="38" />
+                </svg>
+            </div>
+
+            <h2 class="font-playfair text-4xl md:text-5xl text-dark font-semibold mb-16 text-center">From Our Kitchen to Yours</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+                <!-- Card 1 -->
+                <div class="bg-white border border-pattern rounded-xl p-4 shadow-sm hover:shadow-md hover:border-secondary hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-full h-48 bg-gradient-to-br from-[#FFFBF5] to-[#F1E4E4] rounded-lg mb-4"></div>
+                    <div class="px-2 pb-2 text-center">
+                        <h3 class="font-playfair text-xl text-dark font-semibold mb-2">Classic Chocolate Chip</h3>
+                        <p class="font-nunito text-sm italic text-dark/70 mb-4">Golden edges, soft centers, and pools of dark chocolate.</p>
+                        <p class="font-quicksand font-bold text-primary flex items-center justify-center gap-1.5">
+                            <span class="text-accent text-xs">🌿</span> $24 / dozen
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white border border-pattern rounded-xl p-4 shadow-sm hover:shadow-md hover:border-secondary hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-full h-48 bg-gradient-to-br from-[#FFFBF5] to-[#F1E4E4] rounded-lg mb-4"></div>
+                    <div class="px-2 pb-2 text-center">
+                        <h3 class="font-playfair text-xl text-dark font-semibold mb-2">Sugar Cookie</h3>
+                        <p class="font-nunito text-sm italic text-dark/70 mb-4">A tender, buttery bite with a delicate vanilla bean glaze.</p>
+                        <p class="font-quicksand font-bold text-primary flex items-center justify-center gap-1.5">
+                            <span class="text-accent text-xs">🌿</span> $22 / dozen
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white border border-pattern rounded-xl p-4 shadow-sm hover:shadow-md hover:border-secondary hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-full h-48 bg-gradient-to-br from-[#FFFBF5] to-[#F1E4E4] rounded-lg mb-4"></div>
+                    <div class="px-2 pb-2 text-center">
+                        <h3 class="font-playfair text-xl text-dark font-semibold mb-2">Snickerdoodle</h3>
+                        <p class="font-nunito text-sm italic text-dark/70 mb-4">Pillowy soft and rolled generously in cinnamon sugar.</p>
+                        <p class="font-quicksand font-bold text-primary flex items-center justify-center gap-1.5">
+                            <span class="text-accent text-xs">🌿</span> $22 / dozen
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white border border-pattern rounded-xl p-4 shadow-sm hover:shadow-md hover:border-secondary hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-full h-48 bg-gradient-to-br from-[#FFFBF5] to-[#F1E4E4] rounded-lg mb-4"></div>
+                    <div class="px-2 pb-2 text-center">
+                        <h3 class="font-playfair text-xl text-dark font-semibold mb-2">Peanut Butter Blossom</h3>
+                        <p class="font-nunito text-sm italic text-dark/70 mb-4">Rich peanut butter dough crowned with a milk chocolate kiss.</p>
+                        <p class="font-quicksand font-bold text-primary flex items-center justify-center gap-1.5">
+                            <span class="text-accent text-xs">🌿</span> $26 / dozen
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white border border-pattern rounded-xl p-4 shadow-sm hover:shadow-md hover:border-secondary hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-full h-48 bg-gradient-to-br from-[#FFFBF5] to-[#F1E4E4] rounded-lg mb-4"></div>
+                    <div class="px-2 pb-2 text-center">
+                        <h3 class="font-playfair text-xl text-dark font-semibold mb-2">Brownie Bites</h3>
+                        <p class="font-nunito text-sm italic text-dark/70 mb-4">Fudgy, crinkly-topped squares of pure cocoa bliss.</p>
+                        <p class="font-quicksand font-bold text-primary flex items-center justify-center gap-1.5">
+                            <span class="text-accent text-xs">🌿</span> $30 / box of 16
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white border border-pattern rounded-xl p-4 shadow-sm hover:shadow-md hover:border-secondary hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-full h-48 bg-gradient-to-br from-[#FFFBF5] to-[#EAE0D5] rounded-lg mb-4 border border-dashed border-primary/30"></div>
+                    <div class="px-2 pb-2 text-center">
+                        <h3 class="font-playfair text-xl text-dark font-semibold mb-2">The Kitchen Sampler</h3>
+                        <p class="font-nunito text-sm italic text-dark/70 mb-4">Can't decide? Try a curated box of our daily favorites.</p>
+                        <p class="font-quicksand font-bold text-primary flex items-center justify-center gap-1.5">
+                            <span class="text-accent text-xs">🌿</span> $28 / mixed dozen
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <p class="font-sacramento text-4xl md:text-5xl text-secondary">Custom orders bloom here — just ask!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORDER / CONTACT SECTION -->
+    <section id="contact" class="relative bg-light py-24 px-6 md:px-12 fade-in-up">
+        <div class="max-w-4xl mx-auto">
+            
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl text-dark font-semibold">Let's Bake for You</h2>
+            </div>
+
+            <!-- Info Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <!-- Card 1 -->
+                <div class="bg-bg border border-pattern pt-8 pb-6 px-4 text-center relative scalloped-top shadow-sm">
+                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 bg-white rounded-full border border-pattern flex items-center justify-center text-primary">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h4 class="font-quicksand font-bold text-dark mb-1">Custom Orders</h4>
+                    <p class="font-nunito text-sm text-dark/70">5 days notice please</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-bg border border-pattern pt-8 pb-6 px-4 text-center relative scalloped-top shadow-sm">
+                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 bg-white rounded-full border border-pattern flex items-center justify-center text-primary">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h4 class="font-quicksand font-bold text-dark mb-1">Celebrations</h4>
+                    <p class="font-nunito text-sm text-dark/70">Birthdays, showers, & gatherings</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-bg border border-pattern pt-8 pb-6 px-4 text-center relative scalloped-top shadow-sm">
+                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 bg-white rounded-full border border-pattern flex items-center justify-center text-primary">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18.25s-6-3.5-6-7.5c0-2.5 2-4 4-4 1.5 0 2.5 1 2.5 1s1-1 2.5-1c2 0 4 1.5 4 4 0 4-6 7.5-6 7.5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18.25v4m-3-1l3 1 3-1"></path></svg>
+                    </div>
+                    <h4 class="font-quicksand font-bold text-dark mb-1">Follow Along</h4>
+                    <p class="font-nunito text-sm text-dark/70">@bushelandapeck</p>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <form class="bg-white p-8 md:p-10 rounded-2xl border border-pattern/60 shadow-sm max-w-2xl mx-auto space-y-6" onsubmit="event.preventDefault();">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <label class="font-quicksand text-sm font-semibold text-dark/80 ml-1">Name</label>
+                        <input type="text" class="w-full bg-bg border border-pattern rounded-lg px-4 py-3 font-nunito text-dark focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" placeholder="Jane Doe">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="font-quicksand text-sm font-semibold text-dark/80 ml-1">Email</label>
+                        <input type="email" class="w-full bg-bg border border-pattern rounded-lg px-4 py-3 font-nunito text-dark focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" placeholder="jane@example.com">
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <label class="font-quicksand text-sm font-semibold text-dark/80 ml-1">Tell us what you're dreaming of...</label>
+                    <textarea rows="4" class="w-full bg-bg border border-pattern rounded-lg px-4 py-3 font-nunito text-dark focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors resize-none" placeholder="I'd love a dozen chocolate chip cookies for a birthday picnic next Saturday!"></textarea>
+                </div>
+                <div class="pt-4 text-center">
+                    <button type="submit" class="inline-flex items-center justify-center px-10 py-3.5 text-base font-quicksand font-bold text-white bg-secondary rounded-full shadow-sm hover:shadow-md hover:bg-[#c49292] hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto">
+                        Send a Note
+                    </button>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-center py-16 px-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
+            
+            <h2 class="font-sacramento text-5xl md:text-6xl text-secondary mb-4 drop-shadow-sm">Bushel and a Peck</h2>
+            <p class="font-quicksand text-lg text-pattern mb-8">Handmade treats, baked with heart.</p>
+            
+            <!-- Small Footer Divider SVG -->
+            <div class="w-32 h-6 mb-8 text-pattern/50">
+                <svg viewBox="0 0 100 20" fill="none" stroke="currentColor" stroke-width="1" class="w-full">
+                    <path d="M0,10 Q25,0 50,10 T100,10" />
+                    <circle cx="50" cy="10" r="2" fill="currentColor" stroke="none" />
+                </svg>
+            </div>
+
+            <!-- Socials -->
+            <div class="flex gap-6 mb-8 text-primary">
+                <a href="#" class="hover:text-secondary transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </a>
+                <a href="#" class="hover:text-secondary transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+            </div>
+
+            <p class="font-nunito text-sm text-pattern/60 font-light tracking-wide">With flour on our aprons and love in every batch.</p>
+        </div>
+    </footer>
+
+    <!-- Simple Intersection Observer for scroll animations -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in-up').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
 </body>
 </html>
